@@ -1,17 +1,14 @@
 $line-height-base: 24px;
 $baseliner: $line-height-base/4;
 
+html {
+
+
+}
+
 body {
   line-height: $line-height-base;
   padding-top: $baseliner * 12;
-}
-
-.baseliner {
-    position: absolute;
-    top: 0;
-    z-index: 1000;
-
-    pointer-events: none;
 }
 
 .line1, .line2 {
