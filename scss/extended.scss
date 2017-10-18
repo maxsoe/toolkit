@@ -24,7 +24,7 @@ p {
   margin-bottom: 0;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   margin: 0;
   font-weight: inherit;
 }
@@ -53,6 +53,12 @@ h3 {
 h4 {
   font-size: 2em;
   line-height: $baseliner * 8;
+}
+
+h5 {
+  font-size: 1em;
+  font-weight: bold;
+  line-height: $line-height-base;
 }
 
 small, .font_small {font-size: 0.618em;}
