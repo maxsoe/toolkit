@@ -24,7 +24,7 @@ body {
 .helper-grid-vertical {
   @include helper-grid();
 
-  .container {
+  .container, .container-fluid {
     height: 100%;
     .row {
       height: 100%;

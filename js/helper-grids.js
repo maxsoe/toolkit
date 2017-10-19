@@ -9,6 +9,11 @@ $(document).ready(function () {
     if ( e.which === 103 && tag != 'input' && tag != 'textarea') {
       $(".helper-grid-vertical").toggle();
     }
+    // 116 is the "t" key
+    if ( e.which === 116 && tag != 'input' && tag != 'textarea') {
+      $(".helper-vertical-container").toggleClass("container container-fluid");
+      console.log(e.which +" pressed");
+    }
   });
 });
 
