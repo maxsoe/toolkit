@@ -4,7 +4,7 @@ body {
 }
 
 .helper-grid-horizontal {
-  visibility: hidden;
+  display: none;
   position: absolute;
   top: 0;
   z-index: 1000;
@@ -17,7 +17,7 @@ body {
 }
 
 .helper-grid-vertical {
-  visibility: hidden;
+  display: none;
   position: absolute;
   top: 0;
   z-index: 1000;
@@ -37,8 +37,4 @@ body {
       }
     }
   }
-}
-
-.show {
-  visibility: visible;
 }
