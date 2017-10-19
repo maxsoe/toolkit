@@ -3,7 +3,11 @@ $(document).ready(function () {
     var tag = e.target.tagName.toLowerCase();
     // 104 is the "h" key
     if ( e.which === 104 && tag != 'input' && tag != 'textarea') {
-      $(".baseliner").toggleClass("show");
+      $(".helper-grid-horizontal").toggleClass("show");
+    }
+    // 103 is the "g" key
+    if ( e.which === 103 && tag != 'input' && tag != 'textarea') {
+      $(".helper-grid-vertical").toggleClass("show");
     }
   });
 });
