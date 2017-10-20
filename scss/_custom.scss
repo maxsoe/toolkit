@@ -1,14 +1,9 @@
 $line-height-base: 24px;
 $baseliner: $line-height-base/4;
 
-html {
-
-
-}
-
 body {
   line-height: $line-height-base;
-  padding-top: $baseliner * 12;
+  padding-top: 0;
 }
 
 .line1, .line2 {
@@ -67,4 +62,45 @@ small, .font_small {font-size: 0.618em;}
 
 .btn {
   line-height: inherit;
+}
+
+// Nav
+
+
+.navbar {
+  padding: $baseliner 15px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: calc(50% - 56px);
+  @media (min-width: 992px) {
+    margin: inherit;
+  }
+
+  font-size: 2em;
+  padding-top: $baseliner;
+  padding-bottom: $baseliner;
+
+  img {
+    border-radius: 30px;
+    margin-right: 0;
+  }
+}
+
+.navbar-toggler {
+  padding: 2px 8px;
+}
+
+.nav-link {
+  padding: $baseliner 1em;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  @media screen and (min-width: 992px){
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 }
