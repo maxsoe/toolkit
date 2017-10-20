@@ -1,9 +1,16 @@
+
+// Global variables
+
+$enable-shadows: true !default;
+
+// Main part
+
 $line-height-base: 24px;
 $baseliner: $line-height-base/4;
 
 body {
   line-height: $line-height-base;
-  padding-top: 0;
+  padding-top: $baseliner * 10;
 }
 
 p {
@@ -58,7 +65,17 @@ small, .font_small {font-size: 0.618em;}
 // Nav
 
 .navbar {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+
   padding: $baseliner 15px;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+}
+
+.nav-up {
+  top: $baseliner * -10; // same as header height. use variables in LESS/SASS
 }
 
 .navbar-brand {
