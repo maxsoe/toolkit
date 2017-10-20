@@ -67,7 +67,9 @@ small, .font_small {font-size: 0.618em;}
 .navbar {
   position: fixed;
   top: 0;
-  z-index: 100;
+  z-index: 4;
+
+  box-shadow: 0 2px 5px rgba(0,0,0,.26);
 
   padding: $baseliner 15px;
   transition: top 0.2s ease-in-out;
@@ -75,7 +77,7 @@ small, .font_small {font-size: 0.618em;}
 }
 
 .nav-up {
-  top: $baseliner * -10; // same as header height. use variables in LESS/SASS
+  top: $baseliner * -11; // same as header height. use variables in LESS/SASS
 }
 
 .navbar-brand {
