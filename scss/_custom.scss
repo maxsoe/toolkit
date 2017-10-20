@@ -6,15 +6,6 @@ body {
   padding-top: 0;
 }
 
-.line1, .line2 {
-  height: $line-height-base/4;
-  width: 100%;
-}
-
-.line1 {
-  background: rgba(255, 0, 0, 0.2);
-}
-
 p {
   margin-bottom: 0;
 }
@@ -65,7 +56,6 @@ small, .font_small {font-size: 0.618em;}
 }
 
 // Nav
-
 
 .navbar {
   padding: $baseliner 15px;
